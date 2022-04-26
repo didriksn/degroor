@@ -104,11 +104,11 @@
   border-radius: 2px;
   box-shadow: inset 1px 2px 1px rgba(0, 0, 0, 0.05);
   width: 0;
+  padding-left: 10px;
 }
 
 .search-bar::placeholder {
   font-size: 16px;
-  padding-left: 10px;
 }
 
 .search-icon {
