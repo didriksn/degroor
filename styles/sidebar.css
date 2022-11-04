@@ -1,9 +1,13 @@
+:root {
+  --sidebar-color: rgb(231,231,231);
+}
+
 .sidebar {
   position: fixed;
   left: 0;
   bottom: 0;
   top: 55px;
-  background-color: rgb(231,231,231);
+  background-color: var(--sidebar-color);
   width: 72px;
   z-index: 200;
   padding-top: 5px;

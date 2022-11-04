@@ -1,3 +1,7 @@
+:root {
+  --header-color: white;
+}
+
 .header {
   height: 55px;
 
@@ -10,7 +14,7 @@
   left: 0;
   right: 0;
 
-  background-color: white;
+  background-color: var(--header-color);
 
   z-index: 100;
 }
