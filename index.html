@@ -13,17 +13,19 @@
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/video.css">
     <link rel="stylesheet" href="styles/sidebar.css">
+
+    <script src="script.js" defer></script>
   </head>
   <body>
-    <header class="header">
+    <header id="header" class="header">
       <div class="left-section">
         <img class="hamburger-menu"src="assets/icons/hamburger-menu.svg">
         <a href="https://www.youtube.com/">
           <img class="youtube-logo" src="assets/icons/youtube-logo.svg"></a>
       </div>
       <div class="middle-section">
-        <input class="search-bar" type="text" placeholder="Search">
-        <button class="search-button">
+        <input id="search-bar" class="search-bar" type="text" placeholder="Search">
+        <button id="search-button" class="search-button">
           <img class="search-icon" src="assets/icons/search.svg">
           <div class="tooltip">Search</div>
         </button>
@@ -54,31 +56,31 @@
     <nav class="sidebar" id="sidebar">
       <div class="sidebar-link">
         <img src="assets/icons/home.svg">
-        <div>Home</div>
+        <div class="sidebar-text">Home</div>
       </div>
       <div class="sidebar-link">
         <img src="assets/icons/explore.svg">
-        <div>Explore</div>
+        <div class="sidebar-text">Explore</div>
       </div>
       <div class="sidebar-link">
         <img src="assets/icons/subscriptions.svg">
-        <div>Subscriptions</div>
+        <div class="sidebar-text">Subscriptions</div>
       </div>
       <div class="sidebar-link">
         <img src="assets/icons/originals.svg">
-        <div>Originals</div>
+        <div class="sidebar-text">Originals</div>
       </div>
       <div class="sidebar-link">
         <img src="assets/icons/youtube-music.svg">
-        <div>YouTube Music</div>
+        <div class="sidebar-text">YouTube Music</div>
       </div>
       <div class="sidebar-link">
         <img src="assets/icons/library.svg">
-        <div>Library</div>
+        <div class="sidebar-text">Library</div>
       </div>
       <div type="button" class="sidebar-link" id="dark-mode">
         <img src="assets/icons/holemon.png">
-        <div id="dark-mode-text">Dark Mode</div>
+        <div class="sidebar-text" id="dark-mode-text">Dark Mode</div>
       </div>
     </nav>
 
@@ -434,6 +436,6 @@
 </section>
 
 </main>
-<script src="script.js"></script>
+
   </body>
 </html>
