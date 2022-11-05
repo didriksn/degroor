@@ -52,3 +52,18 @@ drk.addEventListener("click", function onClick() {
 
   ;
 });
+
+function searchVideo() {
+  var input = document.getElementById("search-bar").value;
+  input = input.toLowerCase();
+  var videoTitle = document.getElementsByClassName("video-title");
+  var videoPreview = document.getElementsByClassName("video-preview");
+
+  for (i = 0; i < videoTitle.length; i++) {
+    if (!videoTitle[i].innerHTML.toLowerCase().includes(input)) {
+      videoPreview[i].style.display = "none";
+    } else {
+      videoPreview[i].style.display = "list-item";
+    }
+  }
+}

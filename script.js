@@ -57,3 +57,19 @@ drk.addEventListener("click", function onClick() {
     toggle = true; 
   };
 });
+
+function searchVideo() {
+  let input = document.getElementById("search-bar").value;
+  input = input.toLowerCase();
+
+  let videoTitle = document.getElementsByClassName("video-title");
+  let videoPreview = document.getElementsByClassName("video-preview");
+
+  for(i = 0; i < videoTitle.length; i++) {
+    if (!videoTitle[i].innerHTML.toLowerCase().includes(input)) {
+      videoPreview[i].style.display = "none";
+    } else {
+      videoPreview[i].style.display = "list-item";
+    }
+  }
+}
