@@ -1,5 +1,6 @@
 :root {
   --sidebar-color: rgb(231,231,231);
+  --img-color: invert(0);
 }
 
 .sidebar {
@@ -12,7 +13,7 @@
   z-index: 200;
   padding-top: 5px;
   padding-right: 0;
-  margin-right: 50px;
+  margin-right: 50px; 
 }
 
 .sidebar-link {
@@ -32,6 +33,7 @@
 .sidebar-link img {
   height: 24px;
   margin-bottom: 4px;
+  filter: var(--img-color);
 }
 
 .sidebar-link div {

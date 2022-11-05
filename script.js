@@ -22,15 +22,12 @@ drk.addEventListener("click", function onClick() {
     root.style.setProperty("--header-color", "rgb(40,40,40)");
     root.style.setProperty("--sidebar-color", "rgb(24,24,24)");
 
-    // Change images
-    document.getElementById("homeimg").src = "assets/icons/besthaus.png";
-    document.getElementById("exploreimg").src = "assets/icons/LogoCompass.png";
-    document.getElementById("subscriptionsimg").src = "assets/icons/subdark.png";
-    document.getElementById("originalsimg").src = "assets/icons/darkoriginals.png";
-    document.getElementById("musicimg").src = "assets/icons/darkmusic.png";
-    document.getElementById("libraryimg").src = "assets/icons/darklibrary.png";
-    document.getElementById("moonimg").src = "assets/icons/darkmoon.png";
+    // Change image colors
+    root.style.setProperty("--img-color", "invert(80%)");
+    document.getElementById("youtube-logo").src = "assets/icons/darkutublogo.png";
+    document.getElementById("youtube-logo").className = "dark-youtube-logo";
 
+    // Toggle
     toggle = false; 
   } 
   
@@ -51,15 +48,12 @@ drk.addEventListener("click", function onClick() {
     root.style.setProperty("--header-color", "white");
     root.style.setProperty("--sidebar-color", "rgb(231,231,231)");
 
-    // Change images
-    document.getElementById("homeimg").src = "assets/icons/home.svg";
-    document.getElementById("exploreimg").src = "assets/icons/explore.svg";
-    document.getElementById("subscriptionsimg").src = "assets/icons/subscriptions.svg";
-    document.getElementById("originalsimg").src = "assets/icons/originals.svg";
-    document.getElementById("musicimg").src = "assets/icons/youtube-music.svg";
-    document.getElementById("libraryimg").src = "assets/icons/library.svg";
-    document.getElementById("moonimg").src = "assets/icons/holemon.png";
-  
+    // Change image colors
+    root.style.setProperty("--img-color", "invert(0)");
+    document.getElementById("youtube-logo").src = "assets/icons/youtube-logo.svg";
+    document.getElementById("youtube-logo").className = "youtube-logo";
+
+    // Toggle
     toggle = true; 
   };
 });
